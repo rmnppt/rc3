@@ -2,6 +2,8 @@
 
 export(C3Gauge)
 export(C3GaugeOutput)
+export(C3BarChart)
+export(C3BarChartOutput)
 export(C3LineBarChart)
 export(C3LineBarChartOutput)
 export(C3Pie)
