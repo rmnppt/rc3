@@ -2,8 +2,7 @@
 #'
 #' Creat a pie chart
 #'
-#' @param dataset the data to be plotted, a list containing the different data series,
-#'  each as a vector of numeric values.
+#' @param values the data to be plotted, a numeric vector containing the data to be pied.
 #' @param legendPosition the position of the legend, defaults to "bottom"
 #' @param width,height size of figure output
 #'
