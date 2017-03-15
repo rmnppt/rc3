@@ -5,6 +5,6 @@ Authors@R: person("Roman", "Popat", email = "romanpopat@gmx.com", role = c("aut"
 Description: A set of functions in R to generate interactive web ready graphical output based on C3.js, compatible with shiny apps.
 Depends:
     R (>= 3.2.0), htmlwidgets
-License: What license is it under?
+License: MIT
 LazyData: true
 RoxygenNote: 6.0.1
