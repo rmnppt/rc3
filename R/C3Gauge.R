@@ -1,6 +1,9 @@
-#' <Add Title>
+#' C3Gauge
 #'
-#' <Add Description>
+#' Creat a dashboard style gauge
+#'
+#' @param value a single numeric value, the value to display on the gauge
+#' @param width,height size of figure output
 #'
 #' @import htmlwidgets
 #'

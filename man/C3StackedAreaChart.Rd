@@ -2,11 +2,18 @@
 % Please edit documentation in R/C3StackedAreaChart.R
 \name{C3StackedAreaChart}
 \alias{C3StackedAreaChart}
-\title{<Add Title>}
+\title{C3StackedAreaChart}
 \usage{
 C3StackedAreaChart(dataset, colors, width = NULL, height = NULL)
 }
-\description{
-<Add Description>
-}
+\arguments{
+\item{dataset}{the data to be plotted, a list containing the different data series,
+each as a vector of numeric values.}
 
+\item{colors}{vector of colors for the bars.}
+
+\item{width, height}{size of figure output}
+}
+\description{
+Creat a stacked area chart
+}

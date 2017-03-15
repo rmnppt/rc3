@@ -2,11 +2,15 @@
 % Please edit documentation in R/C3Gauge.R
 \name{C3Gauge}
 \alias{C3Gauge}
-\title{<Add Title>}
+\title{C3Gauge}
 \usage{
 C3Gauge(value, width = NULL, height = NULL)
 }
-\description{
-<Add Description>
-}
+\arguments{
+\item{value}{a single numeric value, the value to display on the gauge}
 
+\item{width, height}{size of figure output}
+}
+\description{
+Creat a dashboard style gauge
+}

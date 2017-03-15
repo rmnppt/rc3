@@ -2,11 +2,18 @@
 % Please edit documentation in R/C3Pie.R
 \name{C3Pie}
 \alias{C3Pie}
-\title{<Add Title>}
+\title{C3Pie}
 \usage{
 C3Pie(values, legendPosition = "bottom", width = NULL, height = NULL)
 }
-\description{
-<Add Description>
-}
+\arguments{
+\item{legendPosition}{the position of the legend, defaults to "bottom"}
 
+\item{width, height}{size of figure output}
+
+\item{dataset}{the data to be plotted, a list containing the different data series,
+each as a vector of numeric values.}
+}
+\description{
+Creat a pie chart
+}

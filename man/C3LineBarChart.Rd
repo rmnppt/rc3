@@ -2,11 +2,18 @@
 % Please edit documentation in R/C3LineBarChart.R
 \name{C3LineBarChart}
 \alias{C3LineBarChart}
-\title{<Add Title>}
+\title{C3LineBarChart}
 \usage{
 C3LineBarChart(dataset, colors, width = NULL, height = NULL)
 }
-\description{
-<Add Description>
-}
+\arguments{
+\item{dataset}{the data to be plotted, a list containing the different data series,
+each as a vector of numeric values.}
 
+\item{colors}{vector of colors for the bars.}
+
+\item{width, height}{size of figure output}
+}
+\description{
+Creat a mixed line and bar chart
+}

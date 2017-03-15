@@ -1,6 +1,13 @@
-#' <Add Title>
+#' C3BarChart
 #'
-#' <Add Description>
+#' Creat a bar chart
+#'
+#' @param dataset the data to be plotted, a list containing the different data series,
+#'  each as a vector of numeric values.
+#' @param ratio the ratio between the width of bars and
+#' the width of spaces in between bars, a single numeric value.
+#' @param colors vector of colors for the bars.
+#' @param width,height size of figure output
 #'
 #' @import htmlwidgets
 #'

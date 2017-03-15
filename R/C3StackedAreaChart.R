@@ -1,6 +1,11 @@
-#' <Add Title>
+#' C3StackedAreaChart
 #'
-#' <Add Description>
+#' Creat a stacked area chart
+#'
+#' @param dataset the data to be plotted, a list containing the different data series,
+#'  each as a vector of numeric values.
+#' @param colors vector of colors for the bars.
+#' @param width,height size of figure output
 #'
 #' @import htmlwidgets
 #'

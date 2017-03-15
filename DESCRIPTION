@@ -1,10 +1,10 @@
-Package: C3
-Title: What the Package Does (one line, title case)
+Package: rc3
+Title: Bindings to C3.js from R (forked from https://github.com/FrissAnalytics/shinyJsTutorials)
 Version: 0.0.0.9000
-Authors@R: person("First", "Last", email = "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph)
+Authors@R: person("Roman", "Popat", email = "romanpopat@gmx.com", role = c("aut", "cre"))
+Description: A set of functions in R to generate interactive web ready graphical output based on C3.js, compatible with shiny apps.
 Depends:
     R (>= 3.2.0), htmlwidgets
 License: What license is it under?
 LazyData: true
-RoxygenNote: 5.0.1
+RoxygenNote: 6.0.1
