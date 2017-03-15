@@ -7,12 +7,11 @@
 C3Pie(values, legendPosition = "bottom", width = NULL, height = NULL)
 }
 \arguments{
+\item{values}{the data to be plotted, a numeric vector containing the data to be pied.}
+
 \item{legendPosition}{the position of the legend, defaults to "bottom"}
 
 \item{width, height}{size of figure output}
-
-\item{dataset}{the data to be plotted, a list containing the different data series,
-each as a vector of numeric values.}
 }
 \description{
 Creat a pie chart
