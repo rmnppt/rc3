@@ -30,6 +30,13 @@ HTMLWidgets.widget({
                 width: {
                   ratio: x.ratio
                 }
+        		  },
+        		  axis: {
+        		    x: {
+        		      tick: {
+        		        values: x.axis_vals
+        		      }
+        		    }
         		  }
            });
         }

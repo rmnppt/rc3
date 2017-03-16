@@ -7,8 +7,8 @@
 C3BarChart(dataset, ratio, colors, width = NULL, height = NULL)
 }
 \arguments{
-\item{dataset}{the data to be plotted, a list containing the different data series,
-each as a vector of numeric values.}
+\item{dataset}{the data to be plotted, a list or data.frame containing the different data series,
+each as a vector of numeric values. Note that a vector of x values must be supplied and named 'x'.}
 
 \item{ratio}{the ratio between the width of bars and
 the width of spaces in between bars, a single numeric value.}

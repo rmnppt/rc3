@@ -14,11 +14,14 @@
 #' @export
 C3BarChart <- function(dataset, ratio, colors, width = NULL, height = NULL) {
 
+  axis_vals <- pretty(dataset$x)
+
   # forward options using x
   x = list(
     dataset  = dataset,
+    axis_vals = axis_vals,
     ratio = ratio,
-    colors   = colors
+    colors = colors
   )
 
   # create widget
