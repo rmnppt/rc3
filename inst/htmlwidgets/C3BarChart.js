@@ -15,14 +15,13 @@ HTMLWidgets.widget({
 
         // if the chart does not exist, create it via c3.generate
         if(chart===null){
-
             keys = _.keys(x.dataset);
-
           	chart = c3.generate({
           		bindto: el,
           		data: {
           			json: [],
           			keys: {
+          			  x: 'x',
           				value: keys
           			},
           			type: 'bar',

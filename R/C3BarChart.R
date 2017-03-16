@@ -2,8 +2,8 @@
 #'
 #' Creat a bar chart
 #'
-#' @param dataset the data to be plotted, a list containing the different data series,
-#'  each as a vector of numeric values.
+#' @param dataset the data to be plotted, a list or data.frame containing the different data series,
+#'  each as a vector of numeric values. Note that a vector of x values must be supplied and named 'x'.
 #' @param ratio the ratio between the width of bars and
 #' the width of spaces in between bars, a single numeric value.
 #' @param colors vector of colors for the bars.
@@ -27,7 +27,7 @@ C3BarChart <- function(dataset, ratio, colors, width = NULL, height = NULL) {
     x,
     width = width,
     height = height,
-    package = 'C3'
+    package = 'rc3'
   )
 }
 
@@ -49,7 +49,7 @@ C3BarChart <- function(dataset, ratio, colors, width = NULL, height = NULL) {
 #'
 #' @export
 C3BarChartOutput <- function(outputId, width = '100%', height = '400px'){
-  htmlwidgets::shinyWidgetOutput(outputId, 'C3BarChart', width, height, package = 'C3')
+  htmlwidgets::shinyWidgetOutput(outputId, 'C3BarChart', width, height, package = 'rc3')
 }
 
 #' @rdname C3BarChart-shiny

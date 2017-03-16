@@ -49,7 +49,7 @@ HTMLWidgets.widget({
           			  //  x axis as timeseries
           				type: "timeseries",
 
-          				// tick format x-asis
+          				// tick format x-axis
           				tick: {
           					format: "%Y-%m-%d"
           				}

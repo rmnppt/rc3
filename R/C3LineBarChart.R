@@ -24,7 +24,7 @@ C3LineBarChart <- function(dataset, colors, width = NULL, height = NULL) {
     x,
     width = width,
     height = height,
-    package = 'C3'
+    package = 'rc3'
   )
 }
 
@@ -46,7 +46,7 @@ C3LineBarChart <- function(dataset, colors, width = NULL, height = NULL) {
 #'
 #' @export
 C3LineBarChartOutput <- function(outputId, width = '100%', height = '400px'){
-  htmlwidgets::shinyWidgetOutput(outputId, 'C3LineBarChart', width, height, package = 'C3')
+  htmlwidgets::shinyWidgetOutput(outputId, 'C3LineBarChart', width, height, package = 'rc3')
 }
 
 #' @rdname C3LineBarChart-shiny
