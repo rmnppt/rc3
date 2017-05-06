@@ -22,4 +22,4 @@ C3LineBarChart(dataset = dataset,colors=colors)
 
 dataset <- data.frame(x = rnorm(100), y = rnorm(100))
 colours <- list(y = "red")
-C3Scatter(dataset, size = 10, colours)
+C3Scatter(dataset, size = 5, colours)
