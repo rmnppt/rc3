@@ -18,6 +18,7 @@ C3Scatter <- function(dataset, size = 2.5, colors, width = NULL, height = NULL) 
   # forward options using x
   x = list(
     dataset  = dataset,
+    size = size,
     axis_vals = axis_vals,
     colors = colors
   )
