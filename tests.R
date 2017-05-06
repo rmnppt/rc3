@@ -19,3 +19,7 @@ dataset <- data.frame(Time=c("2016-01-05","2016-01-12","2016-01-24"),
                       Total=c(320,210,190))
 colors      <- list(Total="gray",GREEN="Green",RED="Red")
 C3LineBarChart(dataset = dataset,colors=colors)
+
+dataset <- data.frame(x = rnorm(100), y = rnorm(100))
+colours <- list(y = "red")
+C3Scatter(dataset, size = 10, colours)
