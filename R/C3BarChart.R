@@ -52,7 +52,7 @@ C3BarChart <- function(dataset, ratio, colors, width = NULL, height = NULL) {
 #'
 #' @export
 C3BarChartOutput <- function(outputId, width = '100%', height = '400px'){
-  htmlwidgets::shinyWidgetOutput(outputId, 'C3BarChart', width, height, package = 'rc3')
+  htmlwidgets::shinyWidgetOutput(outputId, 'C3BarChart-shiny', width, height, package = 'rc3')
 }
 
 #' @rdname C3BarChart-shiny
