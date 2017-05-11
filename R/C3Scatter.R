@@ -1,32 +1,31 @@
-#' C3BarChart
+#' C3Scatter
 #'
-#' Creat a bar chart
+#' Creat a scatter plot
 #'
 #' @param dataset the data to be plotted, a list or data.frame containing the different data series,
 #'  each as a vector of numeric values. Note that a vector of x values must be supplied and named 'x'.
-#' @param ratio the ratio between the width of bars and
-#' the width of spaces in between bars, a single numeric value.
+#' @param size the ratio of the points to be plotted
 #' @param colors vector of colors for the bars.
 #' @param width,height size of figure output
 #'
 #' @import htmlwidgets
 #'
 #' @export
-C3BarChart <- function(dataset, ratio, colors, width = NULL, height = NULL) {
+C3Scatter <- function(dataset, size = 2.5, colors, width = NULL, height = NULL) {
 
   axis_vals <- pretty(dataset$x)
 
   # forward options using x
   x = list(
     dataset  = dataset,
+    size = size,
     axis_vals = axis_vals,
-    ratio = ratio,
     colors = colors
   )
 
   # create widget
   htmlwidgets::createWidget(
-    name = 'C3BarChart',
+    name = 'C3Scatter',
     x,
     width = width,
     height = height,
@@ -51,13 +50,13 @@ C3BarChart <- function(dataset, ratio, colors, width = NULL, height = NULL) {
 #' @name C3BarChart-shiny
 #'
 #' @export
-C3BarChartOutput <- function(outputId, width = '100%', height = '400px'){
-  htmlwidgets::shinyWidgetOutput(outputId, 'C3BarChart', width, height, package = 'rc3')
+C3ScatterOutput <- function(outputId, width = '100%', height = '400px'){
+  htmlwidgets::shinyWidgetOutput(outputId, 'C3Scatter', width, height, package = 'rc3')
 }
 
 #' @rdname C3BarChart-shiny
 #' @export
-renderC3BarChart <- function(expr, env = parent.frame(), quoted = FALSE) {
+renderC3Scatter <- function(expr, env = parent.frame(), quoted = FALSE) {
   if (!quoted) { expr <- substitute(expr) } # force quoted
-  htmlwidgets::shinyRenderWidget(expr, C3BarChartOutput, env, quoted = TRUE)
+  htmlwidgets::shinyRenderWidget(expr, C3ScatterOutput, env, quoted = TRUE)
 }
