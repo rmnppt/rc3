@@ -35,7 +35,7 @@ C3Scatter <- function(dataset, size = 2.5, colors, width = NULL, height = NULL) 
 
 #' Shiny bindings for C3Scatter
 #'
-#' Output and render functions for using C3BarChart within Shiny
+#' Output and render functions for using C3Scatter within Shiny
 #' applications and interactive Rmd documents.
 #'
 #' @param outputId output variable to read from
